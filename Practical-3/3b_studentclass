@@ -1,0 +1,34 @@
+  class Student
+{
+    constructor(rollno, firstname, lastname)
+    {
+        this.rollno=rollno;
+        this.firstname=firstname;
+        this.lastname=lastname;
+    }
+    fullName()
+    {
+        return this.firstname+" "+this.lastname
+    }
+}
+
+const myName= new Student(85, "Meghal", "Shah")
+console.log(`Full name: ${myName.fullName()}.`)
+
+
+class Student
+{
+    constructor(rollno, firstname, lastname)
+    {
+        this.rollno=rollno;
+        this.firstname=firstname;
+        this.lastname=lastname;
+    }
+    fullName()
+    {
+        this.name=this.firstname+" "+this.lastname
+        console.log(`Full name: ${this.name}.`)
+    }
+}
+// const myName= new Student(85, "Meghal", "Shah");
+myName.fullName();
